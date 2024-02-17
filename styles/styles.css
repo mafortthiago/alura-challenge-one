@@ -1,0 +1,15 @@
+:root {
+  --background-color: #f3f5fc;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 96px;
+  background-color: var(--background-color);
+}
+#logo_alura {
+  margin: 24px 16px;
+}
