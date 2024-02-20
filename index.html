@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/index.js" defer></script>
-    <title>Descodificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Decodificador</title>
   </head>
   <body>
     <header>
@@ -13,7 +19,51 @@
         <img src="./assets/img/logo.png" alt="logo da alura" id="logo_alura" />
       </a>
     </header>
-    <main></main>
+    <main>
+      <div class="text">
+        <h2>Digite seu texto abaixo:</h2>
+        <form>
+          <textarea name="" id="text_input" cols="30" rows="10"></textarea>
+          <p class="info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="#1a1a1a"
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2"
+              />
+            </svg>
+            <span> Apenas letras minúsculas e sem acento </span>
+          </p>
+          <div class="inputs">
+            <input
+              type="button"
+              value="Criptografar"
+              id="btn_crpitografar"
+              onclick="criptografar()"
+            />
+            <input
+              type="button"
+              value="Descriptografar"
+              id="btn_descriptografar"
+              onclick="descriptografar()"
+            />
+          </div>
+        </form>
+      </div>
+      <section id="msg">
+        <img
+          src="./assets/img/no-msg.svg"
+          alt="Imagem de um menino procurando algo com uma lupa"
+          id="no_msg"
+        />
+        <h2>Nenhuma mensagem encontrada</h2>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
