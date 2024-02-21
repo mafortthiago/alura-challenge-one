@@ -94,6 +94,11 @@ main {
 #no_msg {
   display: none;
 }
+.paragraph_msg {
+  overflow: auto;
+  word-wrap: break-word;
+}
+
 @media (min-width: 1024px) {
   main {
     display: flex;
